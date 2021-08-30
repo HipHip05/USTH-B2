@@ -24,4 +24,19 @@
 
 **Principle**
 
-![](https://raw.githubusercontent.com/nghminh163/USTH-B2/main/Numerical%20Method/assets/non-linear-bisection-2.png?token=AFZLYS2N7HSBHVHBPY5VUADBGOH7O
+![](https://raw.githubusercontent.com/nghminh163/USTH-B2/main/Numerical%20Method/assets/non-linear-bisection-2.png?token=AFZLYS6Y4AZ6HVN64ZNVIRDBGOING)
+
+A few steps of the bisection method applied over the starting range $[a_1 ; b_1]$​. The bigger **red dot** is the **root of the function**
+
+- This is a **recursive algorithm** because a set of steps are **repeated** with the previous answer put in the next repetition
+- Each repetition is called an iteration
+
+**Steps**
+
+A continuous function $f$​ , an interval $[a,b]$, and the function values $f(a)$ and $f(b)$. The function values are of **opposite sign** (There is at least one zero crossing with the interval)
+
+1. **Calculate** the midpoint of the interval, $c = 0.5 \times (a+b)  $ 
+2. **Calculate the function value** at the midpoint, $f(c)$
+3. If **convergence** is satisfactory (that is, **a-c** is sufficiently small, or $f(c)$ is sufficiently small), return $c$ and stop iterating
+4. Examine the sign of $f(c)$ and replace either $(a,f(a))$ or $(b,f(b))$ with $(c,f(c))$ so that there is a zero crossing within the new interval
+
