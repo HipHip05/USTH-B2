@@ -34,7 +34,7 @@ using namespace std;
 //     }
 //     return true;
 
-// Total Complexity O(n) * (O(n) + O(sqrt(n))) = O(n log n)
+// Total Complexity O(n) * (O(n) + O(sqrt(n))) = O(n^2)
 
 vector<int> factorize(int n)
 {
